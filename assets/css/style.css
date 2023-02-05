@@ -1,0 +1,594 @@
+@import url("https://fonts.google.com/specimen/Inter"); /* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    -webkit-animation-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* 50px */
+/* 417px */
+/* 470px */
+/* 852px */
+/* 1024px */
+/* 1920px */
+@media (min-width: 29.375em) and (max-width: 120em) {
+  body main {
+    font-family: "Inter", sans-serif;
+    margin: 0 auto;
+    width: 100%;
+  }
+  body main .mobile-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 6em;
+  }
+  body main .mobile-container .mobile-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1150px;
+    padding-left: 1.8em;
+  }
+  body main .mobile-container .close-btn {
+    display: none;
+  }
+  body main .mobile-container nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  body main .mobile-container nav ul li {
+    list-style: none;
+    margin-right: 2.3rem;
+  }
+  body main .mobile-container nav ul li a {
+    text-decoration: none;
+    color: hsl(233deg, 8%, 79%);
+  }
+  body main header {
+    display: none;
+  }
+  body main .top-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3em;
+  }
+  body main .top-content .figure-container {
+    width: 100%;
+    max-width: 710px;
+    margin-right: 2em;
+  }
+  body main .top-content .figure-container .figure-mobile {
+    display: none;
+  }
+  body main .top-content .figure-container .figure-col {
+    display: flex;
+    flex-direction: row;
+  }
+  body main .top-content .figure-container .figure-col figcaption {
+    padding-top: 0.8em;
+    padding-right: 2em;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+    width: 100%;
+  }
+  body main .top-content .figure-container .figure-col .desktop-figure-read {
+    padding-top: 2em;
+    width: 100%;
+  }
+  body main .top-content .figure-container .figure-col .desktop-figure-read p {
+    color: hsl(233deg, 8%, 79%);
+    font-size: 15px;
+    text-align: left;
+    padding-right: 1em;
+    padding-bottom: 2em;
+  }
+  body main .top-content .figure-container .figure-col .desktop-figure-read button {
+    margin-top: 1rem;
+    background-color: hsl(5deg, 85%, 63%);
+    border: none;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  body main .top-content .figure-container .figure-col .desktop-figure-read button a {
+    color: hsl(36deg, 100%, 99%);
+    text-decoration: none;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+  }
+  body main .top-content .figure-container .figure-col .desktop-figure-read button:hover {
+    cursor: pointer;
+  }
+  body main .top-content .mobile-read-container {
+    display: none;
+  }
+  body main .top-content .desktop-content {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    height: 505px;
+    max-width: 350px;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 1.5em;
+    /* Solid border */
+  }
+  body main .top-content .desktop-content .main-title {
+    color: hsl(35deg, 77%, 62%);
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  body main .top-content .desktop-content .title-group {
+    color: hsl(36deg, 100%, 99%);
+    margin-top: 2rem;
+  }
+  body main .top-content .desktop-content .p-group {
+    color: hsl(233deg, 8%, 79%);
+    font-size: 15px;
+    font-weight: 400;
+    opacity: 0.8;
+  }
+  body main .top-content .desktop-content hr.solid {
+    border: 1px solid hsl(233deg, 8%, 79%) thin;
+    width: 100%;
+    margin-top: 2rem;
+  }
+  body main .middle-content {
+    display: none;
+  }
+  body main .bottom-content {
+    padding-top: 4em;
+    padding-bottom: 6em;
+  }
+  body main .bottom-content article {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  body main .bottom-content article .col-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 365px;
+  }
+  body main .bottom-content article .col-1 img {
+    display: block;
+    width: 100%;
+    max-width: 100px;
+  }
+  body main .bottom-content article .col-1 aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    min-height: 130px;
+    padding-left: 1em;
+    padding-right: 4em;
+  }
+  body main .bottom-content article .col-1 aside h1 {
+    color: hsl(233deg, 8%, 79%);
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+  body main .bottom-content article .col-1 aside h3 {
+    font-size: 0.9rem;
+  }
+  body main .bottom-content article .col-1 aside p {
+    color: hsl(233deg, 8%, 79%);
+    font-size: 0.8rem;
+  }
+  body main .bottom-content article .col-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 365px;
+  }
+  body main .bottom-content article .col-2 img {
+    display: block;
+    width: 100%;
+    max-width: 100px;
+  }
+  body main .bottom-content article .col-2 aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    min-height: 130px;
+    padding-left: 1em;
+    padding-right: 4em;
+  }
+  body main .bottom-content article .col-2 aside h1 {
+    color: hsl(233deg, 8%, 79%);
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+  body main .bottom-content article .col-2 aside h3 {
+    font-size: 0.9rem;
+  }
+  body main .bottom-content article .col-2 aside p {
+    color: hsl(233deg, 8%, 79%);
+    font-size: 0.8rem;
+  }
+  body main .bottom-content article .col-3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 365px;
+  }
+  body main .bottom-content article .col-3 img {
+    display: block;
+    width: 100%;
+    max-width: 100px;
+  }
+  body main .bottom-content article .col-3 aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    min-height: 130px;
+    padding-left: 1em;
+    padding-right: 4em;
+  }
+  body main .bottom-content article .col-3 aside h1 {
+    color: hsl(233deg, 8%, 79%);
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+  body main .bottom-content article .col-3 aside h3 {
+    font-size: 0.9rem;
+  }
+  body main .bottom-content article .col-3 aside p {
+    color: hsl(233deg, 8%, 79%);
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 3.125em) and (max-width: 29.375em) {
+  body {
+    font-family: "Inter", sans-serif;
+  }
+  body main {
+    padding: 2em 1em;
+    position: relative;
+  }
+  body main #overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    /* when the content is visible the transition is smoother */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    /* to make the overlay clickable when the button is not active */
+    overflow-y: hidden;
+  }
+  body main #overlay:active {
+    opacity: 1;
+    /* capturing pointer events to make the overlay clickable when the button is clicked */
+    pointer-events: auto;
+  }
+  body main .mobile-container {
+    height: 100%;
+    position: absolute;
+    left: 33%;
+    width: 100%;
+    max-width: 67vw;
+    z-index: 9;
+    background-color: hsl(36deg, 100%, 99%);
+    transform: translateY(-6vh);
+    transform: translate(-200%); /* NOTE: hide the sidebar*/
+  }
+  body main .mobile-container .mobile-menu {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+  body main .mobile-container .mobile-menu img {
+    display: none;
+  }
+  body main .mobile-container .mobile-menu button {
+    background-color: hsl(36deg, 100%, 99%);
+    border: none;
+    padding-top: 1em;
+    cursor: pointer;
+  }
+  body main .mobile-container .mobile-menu button img {
+    width: 100%;
+    max-width: 70px;
+    display: block;
+    padding-right: 2em;
+    padding-top: 2em;
+  }
+  body main .mobile-container .mobile-menu nav {
+    align-self: flex-start;
+    padding-top: 6em;
+  }
+  body main .mobile-container .mobile-menu nav li {
+    list-style: none;
+    line-height: 3rem;
+  }
+  body main .mobile-container .mobile-menu nav li:hover {
+    background-color: hsl(233deg, 8%, 79%);
+  }
+  body main .mobile-container .mobile-menu nav li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+    font-weight: 400;
+  }
+  body main .show-mobile-container {
+    transform: translateY(-6vh);
+    /* NOTE: show the sidebar*/
+  }
+  body main header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  body main header img:first-child {
+    width: 100%;
+    max-width: 49px;
+  }
+  body main header button {
+    border: none;
+    background-color: hsl(36deg, 100%, 99%);
+    cursor: pointer;
+  }
+  body main header button img:last-child {
+    width: 100%;
+    max-width: 40px;
+  }
+  body main .top-content {
+    padding: 2em 0em;
+  }
+  body main .top-content .figure-container .figure-desktop {
+    display: none;
+  }
+  body main .top-content .figure-container figcaption {
+    padding-top: 0.8em;
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 7.5vh;
+  }
+  body main .top-content .figure-container .desktop-figure-read {
+    display: none;
+  }
+  body main .top-content .desktop-content {
+    display: none;
+  }
+  body main .top-content .mobile-read-container {
+    margin-top: 1rem;
+  }
+  body main .top-content .mobile-read-container p {
+    font-size: 1rem;
+    opacity: 0.6;
+  }
+  body main .top-content .mobile-read-container button {
+    margin-top: 1rem;
+    background-color: hsl(5deg, 85%, 63%);
+    border: none;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  body main .top-content .mobile-read-container button a {
+    color: hsl(36deg, 100%, 99%);
+    text-decoration: none;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+  }
+  body main .top-content .mobile-read-container button:hover {
+    cursor: pointer;
+  }
+  body main .middle-content {
+    margin-top: 2rem;
+    background-color: black;
+  }
+  body main .middle-content article {
+    padding: 1.6em;
+    /* Solid border */
+  }
+  body main .middle-content article .main-title {
+    color: hsl(35deg, 77%, 62%);
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  body main .middle-content article .title-group {
+    color: hsl(36deg, 100%, 99%);
+    margin-top: 2rem;
+  }
+  body main .middle-content article .p-group {
+    color: hsl(233deg, 8%, 79%);
+    font-size: 15px;
+    font-weight: 400;
+    opacity: 0.8;
+  }
+  body main .middle-content article hr.solid {
+    border: 1px solid hsl(233deg, 8%, 79%) thin;
+    width: 100%;
+    margin-top: 2rem;
+  }
+  body main .bottom-content article {
+    display: grid;
+    grid-template-rows: repeat(3, 10em);
+    justify-content: center;
+    align-items: center;
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+  body main .bottom-content article div:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  body main .bottom-content article div:nth-child(1) img {
+    display: block;
+    width: 100%;
+    max-width: 100px;
+    margin-right: 2rem;
+  }
+  body main .bottom-content article div:nth-child(1) .mobile-menu h1 {
+    font-size: 2rem;
+    color: hsl(233deg, 8%, 79%);
+    font-weight: 700;
+  }
+  body main .bottom-content article div:nth-child(1) .mobile-menu h3 {
+    margin-bottom: 0.5rem;
+  }
+  body main .bottom-content article div:nth-child(1) .mobile-menu p {
+    font-size: 15px;
+    color: hsl(233deg, 8%, 79%);
+    font-weight: 400;
+  }
+  body main .bottom-content article div:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  body main .bottom-content article div:nth-child(2) img {
+    display: block;
+    width: 100%;
+    max-width: 100px;
+    margin-right: 2rem;
+  }
+  body main .bottom-content article div:nth-child(2) .mobile-menu h1 {
+    font-size: 2rem;
+    color: hsl(233deg, 8%, 79%);
+    font-weight: 700;
+  }
+  body main .bottom-content article div:nth-child(2) .mobile-menu h3 {
+    margin-bottom: 0.5rem;
+  }
+  body main .bottom-content article div:nth-child(2) .mobile-menu p {
+    font-size: 15px;
+    color: hsl(233deg, 8%, 79%);
+    font-weight: 400;
+  }
+  body main .bottom-content article div:nth-child(3) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  body main .bottom-content article div:nth-child(3) img {
+    display: block;
+    width: 100%;
+    max-width: 100px;
+    margin-right: 2rem;
+  }
+  body main .bottom-content article div:nth-child(3) .mobile-menu h1 {
+    font-size: 2rem;
+    color: hsl(233deg, 8%, 79%);
+    font-weight: 700;
+  }
+  body main .bottom-content article div:nth-child(3) .mobile-menu h3 {
+    margin-bottom: 0.5rem;
+  }
+  body main .bottom-content article div:nth-child(3) .mobile-menu p {
+    font-size: 15px;
+    color: hsl(233deg, 8%, 79%);
+    font-weight: 400;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
