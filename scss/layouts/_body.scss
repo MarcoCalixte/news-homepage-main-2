@@ -550,34 +550,18 @@
                     padding-bottom: 3em;
 
                     div:nth-child(1) {
+                        // border: 1px solid red;
                         display: flex;
                         flex-direction: row;
                         justify-content: center;
                         align-items: center;
 
                         img {
+                            // border: 1px solid red;
                             display: block;
                             width: 100%;
                             max-width: 100px;
                             margin-right: 2rem;
-                        }
-
-                        .mobile-menu {
-                            h1 {
-                                font-size: 2rem;
-                                color: $Grayish-blue;
-                                font-weight: $Weight-2;
-                            }
-
-                            h3 {
-                                margin-bottom: 0.5rem;
-                            }
-
-                            p {
-                                font-size: $Font-size;
-                                color: $Grayish-blue;
-                                font-weight: $Weight-1;
-                            }
                         }
                     }
 
@@ -593,25 +577,6 @@
                             max-width: 100px;
                             margin-right: 2rem;
                         }
-
-                        .mobile-menu {
-
-                            h1 {
-                                font-size: 2rem;
-                                color: $Grayish-blue;
-                                font-weight: $Weight-2;
-                            }
-
-                            h3 {
-                                margin-bottom: 0.5rem;
-                            }
-
-                            p {
-                                font-size: $Font-size;
-                                color: $Grayish-blue;
-                                font-weight: $Weight-1;
-                            }
-                        }
                     }
 
 
@@ -622,21 +587,22 @@
                         align-items: center;
 
                         img {
+                            border: 1px solid red;
                             display: block;
                             width: 100%;
                             max-width: 100px;
                             margin-right: 2rem;
                         }
 
-                        .mobile-menu {
-                            h1 {
+                        aside {
+                             h1 {
                                 font-size: 2rem;
                                 color: $Grayish-blue;
-                                font-weight: $Weight-2;
+                                font-weight: $Weight-1;
                             }
 
                             h3 {
-                                margin-bottom: 0.5rem;
+
                             }
 
                             p {
@@ -645,6 +611,7 @@
                                 font-weight: $Weight-1;
                             }
                         }
+
                     }
                 }
             }

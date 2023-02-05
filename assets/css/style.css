@@ -526,19 +526,6 @@ select {
     max-width: 100px;
     margin-right: 2rem;
   }
-  body main .bottom-content article div:nth-child(1) .mobile-menu h1 {
-    font-size: 2rem;
-    color: hsl(233deg, 8%, 79%);
-    font-weight: 700;
-  }
-  body main .bottom-content article div:nth-child(1) .mobile-menu h3 {
-    margin-bottom: 0.5rem;
-  }
-  body main .bottom-content article div:nth-child(1) .mobile-menu p {
-    font-size: 15px;
-    color: hsl(233deg, 8%, 79%);
-    font-weight: 400;
-  }
   body main .bottom-content article div:nth-child(2) {
     display: flex;
     flex-direction: row;
@@ -551,19 +538,6 @@ select {
     max-width: 100px;
     margin-right: 2rem;
   }
-  body main .bottom-content article div:nth-child(2) .mobile-menu h1 {
-    font-size: 2rem;
-    color: hsl(233deg, 8%, 79%);
-    font-weight: 700;
-  }
-  body main .bottom-content article div:nth-child(2) .mobile-menu h3 {
-    margin-bottom: 0.5rem;
-  }
-  body main .bottom-content article div:nth-child(2) .mobile-menu p {
-    font-size: 15px;
-    color: hsl(233deg, 8%, 79%);
-    font-weight: 400;
-  }
   body main .bottom-content article div:nth-child(3) {
     display: flex;
     flex-direction: row;
@@ -571,20 +545,18 @@ select {
     align-items: center;
   }
   body main .bottom-content article div:nth-child(3) img {
+    border: 1px solid red;
     display: block;
     width: 100%;
     max-width: 100px;
     margin-right: 2rem;
   }
-  body main .bottom-content article div:nth-child(3) .mobile-menu h1 {
+  body main .bottom-content article div:nth-child(3) aside h1 {
     font-size: 2rem;
     color: hsl(233deg, 8%, 79%);
-    font-weight: 700;
+    font-weight: 400;
   }
-  body main .bottom-content article div:nth-child(3) .mobile-menu h3 {
-    margin-bottom: 0.5rem;
-  }
-  body main .bottom-content article div:nth-child(3) .mobile-menu p {
+  body main .bottom-content article div:nth-child(3) aside p {
     font-size: 15px;
     color: hsl(233deg, 8%, 79%);
     font-weight: 400;
