@@ -1,9 +1,12 @@
 $sm-mobile-width: 3.125em; /* 50px */
 $md-mobile-width: 26.0625em; /* 417px */
 $lg-mobile-width: 29.375em; /* 470px */
+$cost-mobile-width: 29.688em; /* 475px */
+$cost-tablet-width: 53.188em; /* 851px */
 $tablet-width: 53.25em; /* 852px */
 $desktop-width: 64em !default; /* 1024px */
 $lg-desktop-width: 120em; /* 1920px */
+
 
 @mixin small-screen-mobile {
   @media (min-width:#{$sm-mobile-width}) and (max-width:#{$tablet-width} ) {
@@ -13,6 +16,12 @@ $lg-desktop-width: 120em; /* 1920px */
 
 @mixin medium-screen-mobile {
   @media (min-width: #{$tablet-width}) and (max-width:#{$lg-desktop-width}) {
+    @content;
+  }
+}
+
+@mixin cost-screen-mobile {
+  @media (min-width: #{$cost-mobile-width}) and (max-width:#{$cost-tablet-width}) {
     @content;
   }
 }

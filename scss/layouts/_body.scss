@@ -342,11 +342,7 @@
                 }
             }
         }
-
-
-
     }
-
 }
 
 
@@ -378,7 +374,6 @@
                     pointer-events: auto;
                 }
             }
-
 
 
             .mobile-container {
@@ -496,7 +491,7 @@
                             padding-top: 0.8em;
                             font-size: 2.6rem;
                             font-weight:$Weight-2;
-                            line-height: 7.5vh;
+                            line-height: 5vh;
                         }
 
                         .desktop-figure-read {
@@ -533,12 +528,11 @@
                             text-transform: uppercase;
                             letter-spacing: 0.4em;
                         }
-                }
 
-                button {
-                    &:hover {
-                        cursor: pointer;
-                    }
+                        &:hover {
+                            cursor: pointer;
+                            background-color: black;
+                        }
                 }
             }
         }
@@ -559,6 +553,11 @@
                         .title-group {
                             color: $Off-white;
                             margin-top: 2rem;
+
+                            &:hover {
+                                cursor: pointer;
+                                color: $Soft-orange;
+                            }
                         }
 
                         .p-group {
@@ -582,10 +581,11 @@
                 article {
                     // border: 1px solid red;
                     display: grid;
-                    grid-template-rows: repeat(3, 1fr);
+                    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
                     gap: 2em;
                     justify-content: center;
                     align-items: center;
+                    width: 100%;
                     padding-top: 3em;
                     padding-bottom: 3em;
 
@@ -613,6 +613,11 @@
 
                             h3 {
                                 font-size: 1.1rem;
+
+                                &:hover {
+                                    cursor: pointer;
+                                    color: $Soft-red;
+                                }
                             }
 
                             p {
@@ -648,6 +653,11 @@
 
                             h3 {
                                 font-size: 1.1rem;
+
+                                &:hover {
+                                    cursor: pointer;
+                                    color: $Soft-red;
+                                }
                             }
 
                             p {
@@ -684,6 +694,11 @@
 
                             h3 {
                                 font-size: 1.1rem;
+
+                                &:hover {
+                                    cursor: pointer;
+                                    color: $Soft-red;
+                                }
                             }
 
                             p {

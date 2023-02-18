@@ -25,7 +25,6 @@ closeBtn.addEventListener('click', function () {
     mobileMenu.classList.remove('show-mobile-container');
     overlay.style.opacity = '0' // having the overlay close with the x button for the form //
     document.querySelector("body").style.overflow = 'visible'; // setting the overlay scrollbar to be hidden in order to scroll
-
 });
 
 overlay.addEventListener('click', () => {
